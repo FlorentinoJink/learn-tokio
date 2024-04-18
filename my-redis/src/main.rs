@@ -6,6 +6,15 @@ use std::sync::{Arc, Mutex};
 use bytes::Bytes;
 
 type Db = Arc<Mutex<HashMap<String, Bytes>>>;
+// type SharedDb = Arc<Vec<Mutex<HashMap<String, Bytes>>>>;
+
+// fn new_shared_db(num_shared: usize) -> SharedDb {
+//     let mut db = Vec::with_capacity(num_shared);
+//     for _ in 0..num_shared {
+//         db.push(Mutex::new(HashMap::new()));
+//     }
+//     Arc::new(db)
+// }
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>>{
