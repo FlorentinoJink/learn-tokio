@@ -21,6 +21,10 @@ path = "examples/async_write.rs"
 name = "async_write_all"
 path = "examples/async_write_all.rs"
 
+[[example]]
+name = "async_io_copy"
+path = "examples/async_io_copy.rs"
+
 [dependencies]
 
 # if you want to use #[tokio::main] macros, add the macros feature.
