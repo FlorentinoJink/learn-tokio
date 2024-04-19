@@ -9,6 +9,10 @@ edition = "2021"
 name = "echo_server_copy"
 path = "src/bin/echo_server_copy.rs"
 
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
+
 [[example]]
 name = "async_read"
 path = "examples/async_read.rs"

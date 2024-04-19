@@ -6,9 +6,13 @@ async fn main() -> io::Result<()> {
     let listener = TcpListener::bind("127.0.0.1:6142").await?;
 
     loop {
-        let (stream, _) = listener.accept().await?;
+        let (mut stream, _) = listener.accept().await?;
         tokio::spawn(async move {
-            todo!()
+            let (mut rd, mut wr) = stream.split();
+
+            if io::copy(&mut rd, &mut wr).await.is_err() {
+                eprintln!("Failed to copy")
+            }
         });
     }
 }
