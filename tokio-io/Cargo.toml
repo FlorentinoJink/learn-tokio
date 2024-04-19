@@ -5,6 +5,22 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[example]]
+name = "async_read"
+path = "examples/async_read.rs"
+
+[[example]]
+name = "async_read_to_end"
+path = "examples/async_read_to_end.rs"
+
+[[example]]
+name = "async_write"
+path = "examples/async_write.rs"
+
+[[example]]
+name = "async_write_all"
+path = "examples/async_write_all.rs"
+
 [dependencies]
 
 # if you want to use #[tokio::main] macros, add the macros feature.
