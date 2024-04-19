@@ -13,6 +13,10 @@ path = "src/bin/echo_server_copy.rs"
 name = "client"
 path = "src/bin/client.rs"
 
+[[bin]]
+name = "echo_server"
+path = "src/bin/echo_server.rs"
+
 [[example]]
 name = "async_read"
 path = "examples/async_read.rs"
