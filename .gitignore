@@ -1,2 +1,4 @@
 my-redis/target/
 tokio-io/target/
+mini-future/target/
+mini-tokio/target/
